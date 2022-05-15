@@ -52,3 +52,39 @@
 // //テンプレート文字列を用いた方法
 // const message2 = `私の名前は${name}です。年齢は${age}です。`;
 // console.log(message2);
+
+/**
+ * アロー関数  func1は関数名　(カッコ内は引数)
+ */
+// 方法１
+// function func1(str) {
+//   return str;
+// }
+// 方法２
+// const func1 = function(str) {
+//   return str;
+// }
+// console.log(func1("func1です"));
+
+//　アロー関数 functionは記述しなくても(引数)
+
+// 引数が１つの場合引数のカッコを省略できる。でも保存すると整形ツールがカッコをつけてくれる
+// const func2 = str => {}
+
+//　　中の処理が１行で終わる場合の省略した書き方　returnが省略できる
+// const func2 = (str) => str;
+
+// const func2 = (str) => {
+//   //処理内容
+//   return str;
+// }
+// console.log(func2("func2です"));
+
+// // 足し算の処理を書いてみる
+// // const func3 = (num1, num2) => {
+// //   return num1 + num2;
+// // };
+
+// // returnが省略できる
+// const func3 = (num1, num2) => num1 + num2;
+// console.log(func3(10, 20));
